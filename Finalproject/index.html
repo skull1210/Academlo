@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylle.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="nav" class="navbar__menu spanish">
+    <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+    <nav class="navbar">
+      <div class="logos"><img src="assets/img/logo.png"></div>
+      <button class="toggle-button" onclick="toggleMenu()">
+        ☰ <!-- Icono del menú -->
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="translate" data-en="Home" data-es="Inicio">Inicio</a></li>
+        <li><a href="#About " class="translate" data-en="About me" data-es="Acerca de mi">Acerca de mí</a></li>
+        <li><a href="#skills" class="translate" data-en="Skills" data-es="Habilidades">Habilidades</a></li>
+        <li><a href="#porta" class="translate" data-en="Portfolio" data-es="Portafolio">Portafolio</a></li>
+        <li><a href="#contacto" class="translate" data-en="Contact" data-es="Contacto">Contacto</a></li>
+      </ul>
+  </div>
+  <div class="typewriter">
+    <span id="typed-text"></span><span class="cursor">|</span>
+  </div>
+
+  <div class="switches-contenedor">
+
+    <div class="switch-container" id="background_switch">
+      <label class="switch">
+        <input type="checkbox" id="background_switchs">
+        <span class="slider"></span>
+      </label>
+      <img src="assets/img/light.png" alt="Descripción de la imagen" class="icono">
+    </div>
+
+
+    </label>
+    <div class="switch-container" id="langswitch">
+      <label class="switch">
+        <input type="checkbox" id="language-toggle">
+        <span class="slider"></span>
+      </label>
+      <img src="assets/img/reino-unido.png" alt="Descripción de la imagen" class="icono">
+    </div>
+
+  </div>
+
+
+
+  <article>
+    <img id="me" src="assets/img/perfil.jpeg"></img>
+    <div class="typewriter">
+      <h1 id="About" class="translate" data-en="About me" data-es="Acerca de mi">Acerca de mi</h1>
+
+  </article>
+
+  <article>
+
+    <div class="Abouts">
+      <div class="container_body">
+        <div class="container_body_child"><img src="assets/img/team.jpeg"></div>
+        <div class="container_body_child_text" data-en="One of the things that I love most in the world is without a doubt,
+        travel to new places, meeting people with culture
+        different from mine, so that I can expand my
+        perspective of the world and, applied to my work
+        ensure that my products reach either an audience
+        more specific or, much broader, always looking for the 
+        way to optimize results." data-es="Una de las cosas que mas amo en el mundo es sin duda,
+        el viajar a lugares nuevos, conocer gente con cultura
+        diferente a la mia, para de esa forma poder ampliar mi
+        perspectiva del mundo y a su vez, aplicado a mi trabajo
+        lograr que mis productos lleguen ya sea a un publico
+        mas especifico o, mucho mas amplio buscando siempre la 
+        manera de optimizar los resultados."> Una de las cosas que mas amo en el mundo es sin duda,
+          el viajar a lugares nuevos, conocer gente con cultura
+          diferente a la mia, para de esa forma poder ampliar mi
+          perspectiva del mundo y a su vez, aplicado a mi trabajo
+          lograr que mis productos lleguen ya sea a un publico
+          mas especifico o, mucho mas amplio buscando siempre la
+          manera de optimizar los resultados.</div>
+        <div class="container_body_child_text" data-en="Another thing that I really enjoy is the fact of knowing
+        new people, I firmly believe that each person has 
+        something to teach me and finding out what it is seems like a game to me
+        that apart from being entertaining, really favorable for creating
+        bonds with people and form a great team, this photo 
+        It was taken with my team from the kitchen where I worked in 
+        summer 2024." data-es=" Otra cosa que disfruto mucho es, el hecho de conocer
+        gente nueva, creo firmemente que cada persona tiene 
+        algo que enseñarme y el averiguar que es me parece un juego
+        que aparte de entretenido, realmente favorable para crear
+        lazos con las personas y formar un equipo grandioso, esta foto 
+        fue tomada con mi equipo de la cocina donde trabaje en 
+        verano de 2024."> Otra cosa que disfruto mucho es, el hecho de conocer
+          gente nueva, creo firmemente que cada persona tiene
+          algo que enseñarme y el averiguar que es me parece un juego
+          que aparte de entretenido, realmente favorable para crear
+          lazos con las personas y formar un equipo grandioso, esta foto
+          fue tomada con mi equipo de la cocina donde trabaje en
+          verano de 2024.</div>
+        <div class="container_body_child"><img src="assets/img/lideraxgo.jpeg"></div>
+        <div class="container_body_child"><img src="assets/img/negotiation.jpeg"></div>
+        <div class="container_body_child_text" class="translate" data-en="Photography, the eighth art, where to start this
+        It is a beautiful hobby that I discovered just a couple of years ago.
+        years, thanks to a friend I met at a summer camp
+        in Pennsylvania, and since then I have realized that I like
+        highlight the beauty of everyday life through photography,
+        activity that also helps me see inside myself during
+        a moment of peace, which allows me to improve a little every day." data-es="  La fotografia, el octavo arte, por donde empezar esta
+        es una hermosa aficion que descubri hace apenas un par de
+        años, gracias a un amigo que conoci en un campamento de verano
+        en Pensylvania, y desde entonces me eh dado cuenta que me gusta
+        resaltar lo hermoso del dia a dia a travez de una fotografia,
+        actividad que tambien me ayuda a ver en mi propio interior durante
+        un momento de paz, lo que me permite mejorar un poco cada dia. "> La fotografia, el octavo arte, por donde
+          empezar esta
+          es una hermosa aficion que descubri hace apenas un par de
+          años, gracias a un amigo que conoci en un campamento de verano
+          en Pensylvania, y desde entonces me eh dado cuenta que me gusta
+          resaltar lo hermoso del dia a dia a travez de una fotografia,
+          actividad que tambien me ayuda a ver en mi propio interior durante
+          un momento de paz, lo que me permite mejorar un poco cada dia.</div>
+
+      </div>
+
+    </div>
+    <div class="typewriter">
+      <h1 id="skills" class="translate" data-en="Skills" data-es="Habilidades">Habilidades</h1>
+    </div>
+  </article>
+
+
+  <article>
+    <div class="Habilidades">
+
+      <div class="container_body">
+        <div class="container_body_child"><img src="assets/img/team.jpeg"></div>
+        <div class="container_body_child_text" class="translate" data-en="Throughout my life, I have learned that teamwork is not only an essential skill,
+        but also one of my greatest strengths. I love collaborating with 
+        different people, share ideas and join forces to achieve 
+        common objectives. My sociable nature allows me to connect quickly
+        with my colleagues, creating an environment of trust and open communication.
+        In university projects and previous work experiences, I have seen how 
+        The synergy of teamwork not only improves the quality of the result, 
+        but also strengthens interpersonal relationships. 
+        I am convinced that each member brings unique value, and I am excited. 
+        for the opportunity to contribute to a diverse and dynamic team." data-es="A lo largo de mi vida, he aprendido que el trabajo en equipo no solo es una habilidad esencial,
+        sino también una de mis mayores fortalezas. Me encanta colaborar con 
+        diferentes personas, compartir ideas y unir fuerzas para alcanzar 
+        objetivos comunes. Mi naturaleza sociable me permite conectar rápidamente
+        con mis compañeros, creando un ambiente de confianza y comunicación abierta.
+        En proyectos universitarios y experiencias laborales previas, he visto cómo 
+        la sinergia del trabajo en equipo no solo mejora la calidad del resultado, 
+        sino que también fortalece las relaciones interpersonales. 
+        Estoy convencido de que cada miembro aporta un valor único, y estoy emocionado 
+        por la oportunidad de contribuir a un equipo diverso y dinámico.">
+          A lo largo de mi vida, he aprendido que el trabajo en equipo no solo es una habilidad esencial,
+          sino también una de mis mayores fortalezas. Me encanta colaborar con
+          diferentes personas, compartir ideas y unir fuerzas para alcanzar
+          objetivos comunes. Mi naturaleza sociable me permite conectar rápidamente
+          con mis compañeros, creando un ambiente de confianza y comunicación abierta.
+          En proyectos universitarios y experiencias laborales previas, he visto cómo
+          la sinergia del trabajo en equipo no solo mejora la calidad del resultado,
+          sino que también fortalece las relaciones interpersonales.
+          Estoy convencido de que cada miembro aporta un valor único, y estoy emocionado
+          por la oportunidad de contribuir a un equipo diverso y dinámico.> A lo largo de mi vida, he aprendido que el
+          trabajo en equipo no solo es una
+          habilidad esencial,
+          sino también una de mis mayores fortalezas. Me encanta colaborar con
+          diferentes personas, compartir ideas y unir fuerzas para alcanzar
+          objetivos comunes. Mi naturaleza sociable me permite conectar rápidamente
+          con mis compañeros, creando un ambiente de confianza y comunicación abierta.
+          En proyectos universitarios y experiencias laborales previas, he visto cómo
+          la sinergia del trabajo en equipo no solo mejora la calidad del resultado,
+          sino que también fortalece las relaciones interpersonales.
+          Estoy convencido de que cada miembro aporta un valor único, y estoy emocionado
+          por la oportunidad de contribuir a un equipo diverso y dinámico.</div>
+        <div class="container_body_child_text" class="translate" data-en="Throughout my career, I have cultivated a strong ability to 
+        lead effectively, especially in collaborative environments. 
+        My sociability allows me to connect with others and understand
+        their needs, which is essential to inspire and motivate
+        to a team. In my academic and work experiences, I have had
+        the opportunity to take on leadership roles in projects where 
+        I have guided my colleagues toward achieving common goals. 
+        I always strive to foster an environment of inclusion and respect,
+        encouraging each member to contribute their ideas and talents. 
+        I firmly believe that a good leader not only leads, but also
+        listens and supports your team, and I am ready to contribute this 
+        philosophy to your organization." data-es="A lo largo de mi carrera, he cultivado una fuerte habilidad para 
+        liderar de manera efectiva, especialmente en entornos colaborativos. 
+        Mi sociabilidad me permite conectar con los demás y entender
+        sus necesidades, lo que es fundamental para inspirar y motivar
+        a un equipo. En mis experiencias académicas y laborales, he tenido
+        la oportunidad de asumir roles de liderazgo en proyectos donde 
+        he guiado a mis compañeros hacia el logro de metas comunes. 
+        Siempre me esfuerzo por fomentar un ambiente de inclusión y respeto,
+        alentando a cada miembro a aportar sus ideas y talentos. 
+        Creo firmemente que un buen líder no solo dirige, sino que también
+        escucha y apoya a su equipo, y estoy listo para aportar esta 
+        filosofía a su organización.">A lo largo de mi carrera, he cultivado una fuerte habilidad para
+          liderar de manera efectiva, especialmente en entornos colaborativos.
+          Mi sociabilidad me permite conectar con los demás y entender
+          sus necesidades, lo que es fundamental para inspirar y motivar
+          a un equipo. En mis experiencias académicas y laborales, he tenido
+          la oportunidad de asumir roles de liderazgo en proyectos donde
+          he guiado a mis compañeros hacia el logro de metas comunes.
+          Siempre me esfuerzo por fomentar un ambiente de inclusión y respeto,
+          alentando a cada miembro a aportar sus ideas y talentos.
+          Creo firmemente que un buen líder no solo dirige, sino que también
+          escucha y apoya a su equipo, y estoy listo para aportar esta
+          filosofía a su organización.</div>
+        <div class="container_body_child"><img src="assets/img/lideraxgo.jpeg"></div>
+        <div class="container_body_child"><img src="assets/img/negotiation.jpeg"></div>
+        <div class="container_body_child_text" class="translate" data-en="Thanks to the experiences I have had, 
+        I have developed solid negotiation skills 
+        that have allowed me to reach favorable agreements in 
+        various situations. My sociable and empathetic character 
+        helps me understand the perspectives of others, 
+        which is key to building relationships of trust. 
+        During my academic and work experiences, I have participated 
+        in successful negotiations where I have been able to balance the 
+        needs of all parties involved, always seeking 
+        beneficial solutions. I firmly believe that negotiation 
+        Effectiveness is not just about winning, but about creating an environment 
+        collaborative where everyone feels heard and valued. 
+        I am excited about the possibility of contributing this skill 
+        your team and contribute to achieving positive results for the 
+        organization." data-es="Gracias a las experiencias que he tenido, 
+        he desarrollado habilidades sólidas en negociación 
+        que me han permitido alcanzar acuerdos favorables en 
+        diversas situaciones. Mi carácter sociable y empático 
+        me ayuda a comprender las perspectivas de los demás, 
+        lo que es clave para construir relaciones de confianza. 
+        Durante mis experiencias académicas y laborales, he participado 
+        en negociaciones exitosas donde he podido equilibrar las 
+        necesidades de todas las partes involucradas, siempre buscando 
+        soluciones beneficiosas. Creo firmemente que la negociación 
+        efectiva no se trata solo de ganar, sino de crear un ambiente 
+        colaborativo donde todos se sientan escuchados y valorados. 
+        Estoy emocionado por la posibilidad de aportar esta habilidad 
+        a su equipo y contribuir a lograr resultados positivos para la 
+        organización.">Gracias a las experiencias que he tenido,
+          he desarrollado habilidades sólidas en negociación
+          que me han permitido alcanzar acuerdos favorables en
+          diversas situaciones. Mi carácter sociable y empático
+          me ayuda a comprender las perspectivas de los demás,
+          lo que es clave para construir relaciones de confianza.
+          Durante mis experiencias académicas y laborales, he participado
+          en negociaciones exitosas donde he podido equilibrar las
+          necesidades de todas las partes involucradas, siempre buscando
+          soluciones beneficiosas. Creo firmemente que la negociación
+          efectiva no se trata solo de ganar, sino de crear un ambiente
+          colaborativo donde todos se sientan escuchados y valorados.
+          Estoy emocionado por la posibilidad de aportar esta habilidad
+          a su equipo y contribuir a lograr resultados positivos para la
+          organización.</div>
+      </div>
+
+    </div>
+
+    <div class="typewriter">
+      <h1 id="porta" class="translate" data-en="Portfolio" data-es="Portafolio">Portafolio</h1>
+    </div>
+    </div>
+  </article>
+
+
+  <article>
+    <div class="container">
+      <div class="container__child scale"><img src="assets/img/project1.jpg" alt="Descripción de la imagen">
+      </div>
+      <div class="container__child scale"><img src="assets/img/project2.png" alt="Descripción de la imagen">
+      </div>
+      <div class="container__child scale"><img src="assets/img/project3.jpg" alt="Descripción de la imagen">
+      </div>
+      <div class="container__child scale"><img src="assets/img/project4.png" alt="Descripción de la imagen">
+      </div>
+      <div class="container__child scale"><img src="assets/img/project1.jpg" alt="Descripción de la imagen">
+      </div>
+      <div class="container__child scale"><img src="assets/img/project3.jpg" alt="Descripción de la imagen">
+      </div>
+    </div>
+  </article>
+
+
+  <main>
+    <div class="typewriter">
+      <h1 id="contacto" class="translate" data-en="Contact" data-es="Contacto">Contacto</h1>
+    </div>
+    <section id="contact" class="contact section">
+      <div class="contact__container">
+        <div class="contact_info">
+          <p class="contact__info-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <address class="contact_info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto" target="_blank"
+                  rel="noreferrer nofollow" class="translate" data-en="Send WhatsApp message"
+                  data-es="Enviar mensaje por whatsapp">Enviar mensaje por WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:1-234-567-8910" target="_blank" rel="noreferrer nofollow">
+                  +52 2213679763
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:test@correo.com" target="_blank" rel="noreferrer nofollow">
+                  huertaisai9@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+            </div>
+
+          </address>
+        </div>
+        <span class="contact__info-map"> <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241378.57073217988!2d-98.3573432616532!3d19.03997379070646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sHeroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses!2smx!4v1729219400024!5m2!1ses!2smx"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+
+      </div>
+    </section>
+  </main>
+
+
+</body>
+
+
+<footer class="footer section">
+  <div class="footer__container grid--container">
+    <div class="footer__info">
+      <h3 class="footer__title">Christian Hernandez</h3>
+      <p class="translate" data-en="I am a web developer, passionate for technology and programming" data-es="Soy desarrollador web, apasionado por la tecnología y la
+    programación.">
+        Soy desarrollador web, apasionado por la tecnología y la
+        programación.
+      </p>
+    </div>
+
+    <h3 class="translate" data-en="Social media" data-es="Redes sociales">Redes Sociales</h3>
+    <div class="social-media">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+              class="bx bxl-facebook"></i>
+            <img src="assets/img/face.png" alt="facebook" class="icon">
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+              class="bx bxl-instagram"></i>
+            <img src="assets/img/insta.png" alt="facebook" class="icon">
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+              class="bx bxl-twitter"></i>
+            <img src="assets/img/x.png" alt="facebook" class="icon">
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+              class="bx bxl-linkedin"></i>
+            <img src="assets/img/link.png" alt="facebook" class="icon">
+          </a>
+        </li>
+
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+              class="bx bxl-Github"></i>
+            <img src="assets/img/github.png" alt="facebook" class="icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer__copy"></p>
+</footer>
+
+
+<script src="behind.js"></script>
+
+</html>

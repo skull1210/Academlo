@@ -1,0 +1,376 @@
+html {
+	box-sizing: border-box;
+
+	*,
+	*::before,
+	*:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background-color: #141111;
+		color: #f1f0f0;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+			Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+			sans-serif;
+		margin: 0;
+		height: 100vh;
+		transition: background-color 0.3s, color 0.3s; /* Transición suave */
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
+		h1,
+		p,
+		h2,
+		h3 {
+			padding: 0 2rem;
+		}
+	}
+}
+
+.switches-contenedor {
+	display: flex;
+	align-items: center;
+	gap: 55%; /* Espacio entre los switch boxes */
+	padding-left: 20%;
+}
+
+.switch-container {
+	display: flex;
+	align-items: center;
+}
+
+.icono {
+	width: 40px; /* Ajusta el tamaño de la imagen */
+	height: 40px;
+	margin-left: 10px; /* Espacio entre la imagen y el switch */
+}
+#me {
+	border-radius: 50%;
+	margin-top: 10%;
+	height: 60%;
+	width: 60%;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+input:checked + .slider {
+	background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+	transform: translateX(26px);
+}
+
+.container {
+	display: flex;
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+	border: 2px solid;
+	flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+	justify-content: space-between;
+	border-radius: 30px; /* Espaciado entre los contenedores hijos */
+	.container__child {
+		display: flex;
+		border-radius: 15px;
+		flex: 0 0 calc(33.33% - 20px); /* Ajusta el ancho al 33.33% del contenedor menos el margen */
+		margin: 5px; /* Margen entre los elementos */
+		background-color: purple;
+		cursor: pointer;
+		padding: 5px; /* Espaciado interno */
+		box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+		/* transition: 1s; */
+	}
+}
+
+.scale:hover {
+	/* el valor por defecto es 1  */
+	/* transform: scale(1); */
+
+	/* eje x */
+	/* transform: scaleX(2); */
+	/* eje y  */
+	/* transform: scaleY(2); */
+	/* eje x y y  */
+	/* transform: scale(2);
+	transform: scale(-2); */
+	/* transform: scale(0.5); */
+
+	/* En 2023 surge esta nueva manera de aplicar el transform */
+
+	/* x | y  */
+	scale: 1 1;
+	scale: 2;
+	scale: 6 3;
+	transition: background-color 0.5s;
+	&:hover {
+		background-color: yellowgreen;
+	}
+}
+
+.footer {
+	background-color: #333; /* Color de fondo del footer */
+	padding: 20px;
+	text-align: center;
+}
+
+.footer__social-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.icon {
+	width: 40px; /* Ajusta el tamaño del ícono */
+	height: 40px;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+	transform: scale(2.2); /* Efecto de agrandamiento al pasar el mouse */
+	opacity: 0.8; /* Efecto de transparencia al pasar el mouse */
+	margin: 0;
+}
+
+/* Estilo general */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	padding: 10px 20px;
+	color: white;
+	list-style: none;
+	margin-bottom: 5%;
+}
+
+.logos {
+	width: 5%;
+	height: 5%;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+}
+
+.nav-links li {
+	margin-left: 15px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	padding: 8px 16px;
+	transition: background 0.3s;
+}
+
+.nav-links a:hover {
+	background-color: #555;
+	border-radius: 4px;
+}
+
+.toggle-button {
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+	.nav-links {
+		display: none; /* Oculta el menú por defecto */
+		flex-direction: column;
+		width: 100%;
+		position: absolute;
+		top: 60px; /* Ajusta según la altura de la navbar */
+		left: 0;
+		background-color: #333;
+	}
+
+	.nav-links li {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.toggle-button {
+		display: block; /* Muestra el botón de toggle */
+	}
+
+	.nav-links.active {
+		display: flex; /* Muestra el menú cuando está activo */
+	}
+}
+
+.titulo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Estilo del contenedor de escritura */
+.typewriter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Sixtyfour Convergence', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-size: xx-large;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+/* Efecto del cursor */
+.cursor {
+	display: inline-block;
+	background-color: white;
+	width: 2px;
+	height: 1em;
+	margin-left: 5px;
+	animation: blink 0.7s steps(1) infinite;
+}
+
+/* Animación de parpadeo del cursor */
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.container_body {
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	height: 1500px;
+	border: 2px solid;
+	flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+	justify-content: space-between;
+	border-radius: 30px; /* Espaciado entre los contenedores hijos */
+	.container_body_child {
+		display: flex;
+		border-radius: 15px;
+		flex: 0 0 calc(50% - 20px); /* Ajusta el ancho al 33.33% del contenedor menos el margen */
+		margin: 10px; /* Margen entre los elementos */
+		background-color: black;
+		cursor: pointer;
+		padding: 15px; /* Espaciado interno */
+		box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+		/* transition: 1s; */
+		height: 30%;
+		overflow: auto;
+		white-space: normal;
+	}
+	.container_body_child_text {
+		display: flex;
+		border-radius: 15px;
+		flex: 0 0 calc(50% - 20px); /* Ajusta el ancho al 33.33% del contenedor menos el margen */
+		margin: 10px; /* Margen entre los elementos */
+		background-color: black;
+		cursor: pointer;
+		padding: 15px; /* Espaciado interno */
+		box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+		/* transition: 1s; */
+		height: 30%;
+		overflow: auto;
+		white-space: normal;
+	}
+}
+
+.headers {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	font-size: xx-large !important;
+	margin-left: 45% !important;
+}
+
+.contact_info-data {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5%;
+	justify-content: center;
+	margin-left: 10%;
+}
+
+.contact__info-map {
+	display: flex;
+	margin-top: 10%;
+	justify-content: center;
+	margin-bottom: 5%;
+	width: 50%;
+	margin-right: 25%;
+	align-items: center;
+	margin-left: 25%;
+}
+
+.contact__info-description {
+	display: flex;
+	justify-content: center;
+}
+
+.text {
+	font-size: xx-small;
+	overflow: hidden;
+}
